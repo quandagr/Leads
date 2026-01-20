@@ -12,7 +12,7 @@
 <body onload ="getleads()">
     <main class="container">
         <h1 class="mt-5">Leads</h1>
-        <form class="mb-4" method="GET" onsubmit="ceateleads()">
+        <form class="mb-4"  onsubmit="createleads()">
 
             <div class="mb-3 d-flex gap-2">
                 <label for="id" class="form-label">ID:</label>
@@ -39,7 +39,9 @@
 
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="leadsdata">
+                <tr>
+                </tr>
             </tbody>
         </table>
     </main>
